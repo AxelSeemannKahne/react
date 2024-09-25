@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:ask_caloriecounter/Resources/Private/Language/locallang_db.xlf" date="2024-09-25T21:44:46Z" product-name="ask_caloriecounter">
+		<header/>
+		<body>
+			<trans-unit id="tx_askcaloriecounter_domain_model_account" resname="tx_askcaloriecounter_domain_model_account">
+				<source>Account</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_account.description" resname="tx_askcaloriecounter_domain_model_account.description">
+				<source>Account</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_account.user" resname="tx_askcaloriecounter_domain_model_account.user">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_account.user.description" resname="tx_askcaloriecounter_domain_model_account.user.description">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_account.garminuser" resname="tx_askcaloriecounter_domain_model_account.garminuser">
+				<source>Garminuser</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_account.garminuser.description" resname="tx_askcaloriecounter_domain_model_account.garminuser.description">
+				<source>Garminuser</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_account.intakes" resname="tx_askcaloriecounter_domain_model_account.intakes">
+				<source>Intakes</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_account.intakes.description" resname="tx_askcaloriecounter_domain_model_account.intakes.description">
+				<source>Intakes</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_account.consumptions" resname="tx_askcaloriecounter_domain_model_account.consumptions">
+				<source>Consumptions</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_account.consumptions.description" resname="tx_askcaloriecounter_domain_model_account.consumptions.description">
+				<source>Consumptions</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodtype" resname="tx_askcaloriecounter_domain_model_foodtype">
+				<source>Food Type</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodtype.description" resname="tx_askcaloriecounter_domain_model_foodtype.description">
+				<source>Food Type</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodtype.title" resname="tx_askcaloriecounter_domain_model_foodtype.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodtype.title.description" resname="tx_askcaloriecounter_domain_model_foodtype.title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset" resname="tx_askcaloriecounter_domain_model_foodpreset">
+				<source>Food Preset</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset.description" resname="tx_askcaloriecounter_domain_model_foodpreset.description">
+				<source>Food Preset</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset.title" resname="tx_askcaloriecounter_domain_model_foodpreset.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset.title.description" resname="tx_askcaloriecounter_domain_model_foodpreset.title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset.cal" resname="tx_askcaloriecounter_domain_model_foodpreset.cal">
+				<source>Cal</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset.cal.description" resname="tx_askcaloriecounter_domain_model_foodpreset.cal.description">
+				<source>Cal</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset.sugar" resname="tx_askcaloriecounter_domain_model_foodpreset.sugar">
+				<source>Sugar</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset.sugar.description" resname="tx_askcaloriecounter_domain_model_foodpreset.sugar.description">
+				<source>Sugar</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset.protein" resname="tx_askcaloriecounter_domain_model_foodpreset.protein">
+				<source>Protein</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset.protein.description" resname="tx_askcaloriecounter_domain_model_foodpreset.protein.description">
+				<source>Protein</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset.type" resname="tx_askcaloriecounter_domain_model_foodpreset.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodpreset.type.description" resname="tx_askcaloriecounter_domain_model_foodpreset.type.description">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake" resname="tx_askcaloriecounter_domain_model_foodintake">
+				<source>Food Intake</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake.description" resname="tx_askcaloriecounter_domain_model_foodintake.description">
+				<source>Food Intake</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake.title" resname="tx_askcaloriecounter_domain_model_foodintake.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake.title.description" resname="tx_askcaloriecounter_domain_model_foodintake.title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake.cal" resname="tx_askcaloriecounter_domain_model_foodintake.cal">
+				<source>Cal</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake.cal.description" resname="tx_askcaloriecounter_domain_model_foodintake.cal.description">
+				<source>Cal</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake.sugar" resname="tx_askcaloriecounter_domain_model_foodintake.sugar">
+				<source>Sugar</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake.sugar.description" resname="tx_askcaloriecounter_domain_model_foodintake.sugar.description">
+				<source>Sugar</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake.protein" resname="tx_askcaloriecounter_domain_model_foodintake.protein">
+				<source>Protein</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake.protein.description" resname="tx_askcaloriecounter_domain_model_foodintake.protein.description">
+				<source>Protein</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake.type" resname="tx_askcaloriecounter_domain_model_foodintake.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_foodintake.type.description" resname="tx_askcaloriecounter_domain_model_foodintake.type.description">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_calorieconsumption" resname="tx_askcaloriecounter_domain_model_calorieconsumption">
+				<source>Calorie Consumption</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_calorieconsumption.description" resname="tx_askcaloriecounter_domain_model_calorieconsumption.description">
+				<source>Calorie Consumption</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_calorieconsumption.calories" resname="tx_askcaloriecounter_domain_model_calorieconsumption.calories">
+				<source>Calories</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_calorieconsumption.calories.description" resname="tx_askcaloriecounter_domain_model_calorieconsumption.calories.description">
+				<source>Calories</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_calorieconsumption.type" resname="tx_askcaloriecounter_domain_model_calorieconsumption.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_calorieconsumption.type.description" resname="tx_askcaloriecounter_domain_model_calorieconsumption.type.description">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_calorieconsumptiontype" resname="tx_askcaloriecounter_domain_model_calorieconsumptiontype">
+				<source>Calorie Consumption Type</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_calorieconsumptiontype.description" resname="tx_askcaloriecounter_domain_model_calorieconsumptiontype.description">
+				<source>Calorie Consumption Type</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_calorieconsumptiontype.title" resname="tx_askcaloriecounter_domain_model_calorieconsumptiontype.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_askcaloriecounter_domain_model_calorieconsumptiontype.title.description" resname="tx_askcaloriecounter_domain_model_calorieconsumptiontype.title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_ask_caloriecounter_caloriecounterapi.name" resname="tx_ask_caloriecounter_caloriecounterapi.name">
+				<source>Caloriecounter</source>
+			</trans-unit>
+			<trans-unit id="tx_ask_caloriecounter_caloriecounterapi.description" resname="tx_ask_caloriecounter_caloriecounterapi.description">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_ask_caloriecounter_account.name" resname="tx_ask_caloriecounter_account.name">
+				<source>Account</source>
+			</trans-unit>
+			<trans-unit id="tx_ask_caloriecounter_account.description" resname="tx_ask_caloriecounter_account.description">
+				<source></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

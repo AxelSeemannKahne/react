@@ -1,0 +1,28 @@
+plugin.tx_askcaloriecounter_caloriecounterapi {
+    view {
+        # cat=plugin.tx_askcaloriecounter_caloriecounterapi/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:ask_caloriecounter/Resources/Private/Templates/
+        # cat=plugin.tx_askcaloriecounter_caloriecounterapi/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:ask_caloriecounter/Resources/Private/Partials/
+        # cat=plugin.tx_askcaloriecounter_caloriecounterapi/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:ask_caloriecounter/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_askcaloriecounter_caloriecounterapi//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}
+plugin.tx_askcaloriecounter_account {
+    view {
+        # cat=plugin.tx_askcaloriecounter_account/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:ask_caloriecounter/Resources/Private/Templates/
+        # cat=plugin.tx_askcaloriecounter_account/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:ask_caloriecounter/Resources/Private/Partials/
+        # cat=plugin.tx_askcaloriecounter_account/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:ask_caloriecounter/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_askcaloriecounter_account//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

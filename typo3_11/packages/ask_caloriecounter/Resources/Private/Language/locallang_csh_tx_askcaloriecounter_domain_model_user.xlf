@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:ask_caloriecounter/Resources/Private/Language/locallang_csh_tx_askcaloriecounter_domain_model_user.xlf" date="2024-09-24T17:23:27Z" product-name="ask_caloriecounter">
+		<header/>
+		<body>
+			<trans-unit id="user.description" resname="user.description">
+				<source>user</source>
+			</trans-unit>
+			<trans-unit id="garminuser.description" resname="garminuser.description">
+				<source>garminuser</source>
+			</trans-unit>
+			<trans-unit id="intakes.description" resname="intakes.description">
+				<source>intakes</source>
+			</trans-unit>
+			<trans-unit id="consumptions.description" resname="consumptions.description">
+				<source>consumptions</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

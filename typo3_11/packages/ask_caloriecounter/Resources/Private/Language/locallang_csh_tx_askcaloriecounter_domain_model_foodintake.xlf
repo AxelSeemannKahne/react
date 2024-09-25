@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:ask_caloriecounter/Resources/Private/Language/locallang_csh_tx_askcaloriecounter_domain_model_foodintake.xlf" date="2024-09-24T18:16:40Z" product-name="ask_caloriecounter">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="cal.description" resname="cal.description">
+				<source>cal</source>
+			</trans-unit>
+			<trans-unit id="sugar.description" resname="sugar.description">
+				<source>sugar</source>
+			</trans-unit>
+			<trans-unit id="protein.description" resname="protein.description">
+				<source>protein</source>
+			</trans-unit>
+			<trans-unit id="type.description" resname="type.description">
+				<source>type</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
