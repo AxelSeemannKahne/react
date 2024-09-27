@@ -1,0 +1,26 @@
+{
+  "name": "ask/caloriecounter",
+  "type": "typo3-cms-extension",
+  "description": "Caloriecounter-Extension for EXT:nnrestapi",
+  "authors": [],
+  "require": {
+    "typo3/cms-core": "^9.5 || ^10.0 || ^11.0",
+    "nng/nnrestapi": "^1.0",
+    "nng/nnhelpers": "^1.5"
+  },
+    "autoload": {
+    "psr-4": {
+      "Ask\\Caloriecounter\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ask\\Caloriecounter\\Tests\\": "Tests"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+       "extension-key": "caloriecounter"
+    }
+  }
+}

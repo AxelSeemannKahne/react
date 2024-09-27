@@ -1,0 +1,35 @@
+plugin.tx_nnrestapi {
+	settings {
+		
+		# where to upload new files. Use @Api\Upload("config[caloriecounter]")
+		fileUploads {
+			caloriecounter {
+				defaultStoragePath = 1:/caloriecounter/
+			}		
+		}
+		
+		# Default values for new entries
+		insertDefaultValues {
+			Ask\Caloriecounter\Domain\Model\Entry {
+				pid = 4
+			},
+			Ask\Caloriecounter\Domain\Model\Foodpresets {
+                pid = 4
+            }
+
+		}
+
+		# Reduce JSON in response to certain fields
+		globalDistillers {
+			Ask\Caloriecounter\Domain\Model\Entry {
+				#include = uid, title, files
+				flattenFileReferences = 1
+			},
+			Ask\Caloriecounter\Domain\Model\Foodpresets {
+                #include = uid, title, files
+                flattenFileReferences = 1
+            }
+
+		}
+	}
+}

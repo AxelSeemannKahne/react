@@ -1,0 +1,4 @@
+routes:
+  my_api:
+    path: /api/v1/foodpresets
+    target: ASK\AskCaloriecounter\Controller\FoodPresetController->listAction

@@ -1,0 +1,13 @@
+tx_askcaloriecounter_caloriecounterapi[action]: create
+tx_askcaloriecounter_caloriecounterapi[controller]: FoodPreset
+cHash: 89c262b882377eccb765f47d21eb5f86
+tx_askcaloriecounter_caloriecounterapi[__referrer][@extension]: AskCaloriecounter
+tx_askcaloriecounter_caloriecounterapi[__referrer][@controller]: FoodPreset
+tx_askcaloriecounter_caloriecounterapi[__referrer][@action]: new
+tx_askcaloriecounter_caloriecounterapi[__referrer][arguments]: YToyOntzOjY6ImFjdGlvbiI7czozOiJuZXciO3M6MTA6ImNvbnRyb2xsZXIiO3M6MTA6IkZvb2RQcmVzZXQiO30=a4b2e8059d178f328a665cfe2fde41706fe29442
+tx_askcaloriecounter_caloriecounterapi[__referrer][@request]: {"@extension":"AskCaloriecounter","@controller":"FoodPreset","@action":"new"}6cbae7c1f3ee31ea505299c301a996a0ce00a0e1
+tx_askcaloriecounter_caloriecounterapi[__trustedProperties]: {"newFoodPreset":{"title":1,"cal":1,"sugar":1,"protein":1}}e663c5d71847fe5b6cb57b89bb615662039242a1
+tx_askcaloriecounter_caloriecounterapi[newFoodPreset][title]: Fanta
+tx_askcaloriecounter_caloriecounterapi[newFoodPreset][cal]: 100
+tx_askcaloriecounter_caloriecounterapi[newFoodPreset][sugar]: 10
+tx_askcaloriecounter_caloriecounterapi[newFoodPreset][protein]: 1

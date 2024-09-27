@@ -1,0 +1,28 @@
+$aPostVars = $this->request->getArguments();
+        $aNewFoodPreset = $aPostVars['newFoodPreset'];
+
+        $newFoodPreset = new FoodPreset();
+
+        $newFoodPreset->setTitle($aNewFoodPreset['title']);
+        $newFoodPreset->setCal(intval($aNewFoodPreset['cal']));
+        $newFoodPreset->setProtein(intval($aNewFoodPreset['protein']));
+        $newFoodPreset->setSugar(intval($aNewFoodPreset['sugar']));
+
+
+        $foodTypeRepository = $this->objectManager->get(FoodTypeRepository::class);
+        $foodType = $foodTypeRepository->findByUid($aNewFoodPreset['type']);
+
+        if ($foodType) {
+            $newFoodPreset->setType($foodType);
+        } else {
+
+        }
+
+
+        $this->foodPresetRepository->add($newFoodPreset);
+        $this->persistenceManager->persistAll();
+
+        // Weiterleitung oder andere Aktionen nach dem Speichern
+        $this->addFlashMessage('Neuer Datensatz erfolgreich hinzugefügt.');
+        $this->redirect('list');
+        die("!");

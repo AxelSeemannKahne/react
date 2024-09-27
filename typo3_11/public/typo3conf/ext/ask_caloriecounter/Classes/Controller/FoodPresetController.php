@@ -6,6 +6,9 @@ namespace ASK\AskCaloriecounter\Controller;
 
 use TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager;
 
+use Nng\Nnrestapi\Annotations as Api;
+
+
 /**
  * This file is part of the "CalorieCounter" Extension for TYPO3 CMS.
  *
@@ -18,7 +21,7 @@ use TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager;
 /**
  * FoodPresetController
  */
-class FoodPresetController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+class FoodPresetController extends \Nng\Nnrestapi\Api\AbstractApi
 {
 
 
