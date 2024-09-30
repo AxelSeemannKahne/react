@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import MenuIcon from '../../icons/duotone/Text/Article.svg';
+import {LogoutButton} from "../../components/Atoms/LogoutButton";
 
 
 export function Header(){
@@ -19,10 +20,15 @@ export function Header(){
                     <h3 className="text-dark fw-bolder my-3 fs-2">Calo-Balance</h3>
                 </div>
 
-                <button type="button" className="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                    + Preset
-                </button>
+
+                <div>
+                    <button type="button" className="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                        + Preset
+                    </button>
+
+                    <LogoutButton/>
+                </div>
 
             </div>
         </div>

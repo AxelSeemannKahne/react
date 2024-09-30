@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import formIllustration from '../../images/terms-1.png';
 
 export function PresetForm(){
+
 
     const [formData, setFormData] = useState({});
     const [title, setTitle] = useState("");
@@ -9,6 +10,33 @@ export function PresetForm(){
     const [protein, setProtein] = useState("");
     const [sugar, setSugar] = useState("");
     const [type, setType] = useState("");
+
+    const [foodTypes, setFoodTypes] = useState([]);
+
+    // ... existing functions for form handling (titleChanged, calChanged, etc.)
+
+    useEffect(() => {
+        const fetchFoodTypes = async () => {
+            try {
+                const response = await fetch("https://restapi.seemann-kahne.de/api/foodtype/all", {
+                    method: "GET",
+                });
+
+                if (!response.ok) {
+                    throw new Error("Fehler beim Abrufen der Foodpresets");
+                }
+
+                const data = await response.json();
+                setFoodTypes(data);
+            } catch (error) {
+                console.error("Fehler beim Abrufen:", error);
+            }
+        };
+
+        fetchFoodTypes();
+    }, []);
+
+
 
     const titleChanged = (event) => {
         setTitle(event.target.value);
@@ -30,36 +58,44 @@ export function PresetForm(){
         setType(event.target.value);
     }
 
-    const formSubmitted = (submitEvent) => {
-        submitEvent.preventDefault();
+
+
+
+
+
+    const formSubmitted = async (event) => {
+
+        event.preventDefault();
         setFormData({title, protein, sugar, type, cal});
 
-        const formData = new FormData();
-        formData.append('tx_askcaloriecounter_caloriecounterapi[newFoodPreset][title]', title);
-        formData.append('tx_askcaloriecounter_caloriecounterapi[newFoodPreset][cal]', cal);
-        formData.append('tx_askcaloriecounter_caloriecounterapi[newFoodPreset][sugar]', sugar);
-        formData.append('tx_askcaloriecounter_caloriecounterapi[newFoodPreset][protein]', protein);
-        formData.append('tx_askcaloriecounter_caloriecounterapi[newFoodPreset][type]', type);
-
-        const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://react.seemann-kahne.de/typo3_11/public/index.php?id=2&type=777&tx_askcaloriecounter_caloriecounterapi[action]=insert', true); // Replace with the actual API endpoint
-
-        // Set authentication headers if required
-        // xhr.setRequestHeader('Authorization', 'Bearer your_token');
-
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                    console.log('Data created successfully:', xhr.responseText);
-                } else {
-                    console.error('Error creating data:', xhr.status, xhr.responseText);
-                }
-            }
+        const data = {
+            title: title,
+            protein: protein,
+            sugar: sugar,
+            type: type,
+            cal: cal
         };
 
-        xhr.send(formData);
+        try {
+            const response = await fetch('https://restapi.seemann-kahne.de/api/foodpresets', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
 
-    }
+            if (!response.ok) {
+                throw new Error('Fehler beim Senden');
+            }
+
+            const result = await response.json();
+            console.log('Antwort:', result);
+        } catch (error) {
+            console.error('Fehler:', error);
+        }
+    };
+    
 
 
     return (
@@ -69,11 +105,11 @@ export function PresetForm(){
             <div className="form-group my-3">
                 <div htmlFor="type" className="form-label small">Kategorie</div>
                 <select id="type" className="form-select" name="type" value={type} onInput={typeChanged}>
-                    <option value="1">Hauptmahlzeit</option>
-                    <option value="2">Getränke</option>
-                    <option value="3">Sportnahrung</option>
-                    <option value="4">Süssigkeiten</option>
-                    <option value="5">Gebäck</option>
+                    {foodTypes.map(foodType => (
+                        <option key={foodType.uid} value={foodType.uid}>
+                            {foodType.title}
+                        </option>
+                    ))}
                 </select>
             </div>
 
